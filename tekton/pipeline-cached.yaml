@@ -7,7 +7,7 @@ spec:
     - default: 1.0.0
       name: IMAGE_TAG
       type: string
-    - default: quay.io/rhdevelopers/quinoa-wind-turbine
+    - default: quay.io/evanshortiss/quinoa-wind-turbine
       name: IMAGE_NAME
       type: string
     - default: 'https://github.com/redhat-developer-demos/quinoa-wind-turbine.git'
@@ -116,7 +116,7 @@ spec:
         - name: GIT_REF
           value: $(params.MANIFESTS_GIT_BRANCH)
         - name: NEW_IMAGE
-          value: quay.io/rhdevelopers/quinoa-wind-turbine
+          value: quay.io/evanshortiss/quinoa-wind-turbine
         - name: NEW_DIGEST
           value: $(tasks.buildah.results.IMAGE_DIGEST)
         - name: KUSTOMIZATION_PATH
